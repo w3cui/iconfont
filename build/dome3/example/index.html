@@ -6,23 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/iconfont.css">
     <style>
+        .icon_lists{
+          width: 100% !important;
+        }
+
         .icon_lists li{
           float:left;
           width: 100px;
-          height:150px;
+          height:180px;
           text-align: center;
-          list-style: none;
+          list-style: none !important;
+          font-size: 12px;
+          margin-right: 15px;
+          
         }
-        .icon_lists .iconfont{
+        .icon_lists .icon{
+          display: block;
+          text-align: center;
           font-size: 42px;
+          line-height: 100px;
           margin: 10px 0;
           color:#333;
           -webkit-transition: font-size 0.25s ease-out 0s;
           -moz-transition: font-size 0.25s ease-out 0s;
           transition: font-size 0.25s ease-out 0s;
+
         }
-        .icon_lists .iconfont:hover{
+        .fontclass{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+        .icon_lists .icon:hover{
           font-size: 100px;
+        }
+        .markdown {
+          color: #666;
+          font-size: 14px;
+          line-height: 1.8;
+        }
+
+        .highlight {
+          line-height: 1.5;
+        }
+
+        .markdown img {
+          vertical-align: middle;
+          max-width: 100%;
+        }
+
+        .markdown h1 {
+          color: #404040;
+          font-weight: 500;
+          line-height: 40px;
+          margin-bottom: 24px;
         }
         .name {
           font-size: 16px;
@@ -38,206 +71,255 @@
 
 <body>
     <h2>Icon Font</h2>
-    <ul class="icon_lists clear">
+    <ul class="icon_lists clear">    
     
-       <li class="iconfont icon-shangmenbujianfei">
-          <div class="name">shangmenbujianfei</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-shangmenbujianfei"> </i>
+      <div class="fontclass">.icon-shangmenbujianfei</div>
+    </li>
     
-       <li class="iconfont icon-geren">
-          <div class="name">geren</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-geren"> </i>
+      <div class="fontclass">.icon-geren</div>
+    </li>
     
-       <li class="iconfont icon-zhufangbutie">
-          <div class="name">zhufangbutie</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-zhufangbutie"> </i>
+      <div class="fontclass">.icon-zhufangbutie</div>
+    </li>
     
-       <li class="iconfont icon-fenxiang">
-          <div class="name">fenxiang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-fenxiang"> </i>
+      <div class="fontclass">.icon-fenxiang</div>
+    </li>
     
-       <li class="iconfont icon-woshijiaju">
-          <div class="name">woshijiaju</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-woshijiaju"> </i>
+      <div class="fontclass">.icon-woshijiaju</div>
+    </li>
     
-       <li class="iconfont icon-weiyujian">
-          <div class="name">weiyujian</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-weiyujian"> </i>
+      <div class="fontclass">.icon-weiyujian</div>
+    </li>
     
-       <li class="iconfont icon-chufangwujinanzhuang">
-          <div class="name">chufangwujinanzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-chufangwujinanzhuang"> </i>
+      <div class="fontclass">.icon-chufangwujinanzhuang</div>
+    </li>
     
-       <li class="iconfont icon-you">
-          <div class="name">you</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-you"> </i>
+      <div class="fontclass">.icon-you</div>
+    </li>
     
-       <li class="iconfont icon-xiangshang">
-          <div class="name">xiangshang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-xiangshang"> </i>
+      <div class="fontclass">.icon-xiangshang</div>
+    </li>
     
-       <li class="iconfont icon-xiangxia">
-          <div class="name">xiangxia</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-xiangxia"> </i>
+      <div class="fontclass">.icon-xiangxia</div>
+    </li>
     
-       <li class="iconfont icon-shouhoufuwu">
-          <div class="name">shouhoufuwu</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-shouhoufuwu"> </i>
+      <div class="fontclass">.icon-shouhoufuwu</div>
+    </li>
     
-       <li class="iconfont icon-diban">
-          <div class="name">diban</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-diban"> </i>
+      <div class="fontclass">.icon-diban</div>
+    </li>
     
-       <li class="iconfont icon-lajitong">
-          <div class="name">lajitong</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-lajitong"> </i>
+      <div class="fontclass">.icon-lajitong</div>
+    </li>
     
-       <li class="iconfont icon-shimudiban">
-          <div class="name">shimudiban</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-shimudiban"> </i>
+      <div class="fontclass">.icon-shimudiban</div>
+    </li>
     
-       <li class="iconfont icon-shimuchuguianzhuang">
-          <div class="name">shimuchuguianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-shimuchuguianzhuang"> </i>
+      <div class="fontclass">.icon-shimuchuguianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-shimuyiguianzhuang">
-          <div class="name">shimuyiguianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-shimuyiguianzhuang"> </i>
+      <div class="fontclass">.icon-shimuyiguianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-ketingjiaju">
-          <div class="name">ketingjiaju</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-ketingjiaju"> </i>
+      <div class="fontclass">.icon-ketingjiaju</div>
+    </li>
     
-       <li class="iconfont icon-xiaodanfei">
-          <div class="name">xiaodanfei</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-xiaodanfei"> </i>
+      <div class="fontclass">.icon-xiaodanfei</div>
+    </li>
     
-       <li class="iconfont icon-zuo">
-          <div class="name">zuo</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-zuo"> </i>
+      <div class="fontclass">.icon-zuo</div>
+    </li>
     
-       <li class="iconfont icon-chuangpinanzhuang">
-          <div class="name">chuangpinanzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-chuangpinanzhuang"> </i>
+      <div class="fontclass">.icon-chuangpinanzhuang</div>
+    </li>
     
-       <li class="iconfont icon-qianghuadiban">
-          <div class="name">qianghuadiban</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-qianghuadiban"> </i>
+      <div class="fontclass">.icon-qianghuadiban</div>
+    </li>
     
-       <li class="iconfont icon-chaijiufei">
-          <div class="name">chaijiufei</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-chaijiufei"> </i>
+      <div class="fontclass">.icon-chaijiufei</div>
+    </li>
     
-       <li class="iconfont icon-pinhua">
-          <div class="name">pinhua</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-pinhua"> </i>
+      <div class="fontclass">.icon-pinhua</div>
+    </li>
     
-       <li class="iconfont icon-banyunfei">
-          <div class="name">banyunfei</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-banyunfei"> </i>
+      <div class="fontclass">.icon-banyunfei</div>
+    </li>
     
-       <li class="iconfont icon-shijian">
-          <div class="name">shijian</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-shijian"> </i>
+      <div class="fontclass">.icon-shijian</div>
+    </li>
     
-       <li class="iconfont icon-banshichuguianzhuang">
-          <div class="name">banshichuguianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-banshichuguianzhuang"> </i>
+      <div class="fontclass">.icon-banshichuguianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-banshiyiguianzhuang">
-          <div class="name">banshiyiguianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-banshiyiguianzhuang"> </i>
+      <div class="fontclass">.icon-banshiyiguianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-tatami">
-          <div class="name">tatami</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-tatami"> </i>
+      <div class="fontclass">.icon-tatami</div>
+    </li>
     
-       <li class="iconfont icon-chuguileianzhuang">
-          <div class="name">chuguileianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-chuguileianzhuang"> </i>
+      <div class="fontclass">.icon-chuguileianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-oushichuguianzhuang">
-          <div class="name">oushichuguianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-oushichuguianzhuang"> </i>
+      <div class="fontclass">.icon-oushichuguianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-oushiyiguianzhuang">
-          <div class="name">oushiyiguianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-oushiyiguianzhuang"> </i>
+      <div class="fontclass">.icon-oushiyiguianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-xiyiguianzhuang">
-          <div class="name">xiyiguianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-xiyiguianzhuang"> </i>
+      <div class="fontclass">.icon-xiyiguianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-ximianpenanzhuang">
-          <div class="name">ximianpenanzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-ximianpenanzhuang"> </i>
+      <div class="fontclass">.icon-ximianpenanzhuang</div>
+    </li>
     
-       <li class="iconfont icon-celiangfuwu">
-          <div class="name">celiangfuwu</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-celiangfuwu"> </i>
+      <div class="fontclass">.icon-celiangfuwu</div>
+    </li>
     
-       <li class="iconfont icon-yushiguianzhuang">
-          <div class="name">yushiguianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-yushiguianzhuang"> </i>
+      <div class="fontclass">.icon-yushiguianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-yuganganzhuang">
-          <div class="name">yuganganzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-yuganganzhuang"> </i>
+      <div class="fontclass">.icon-yuganganzhuang</div>
+    </li>
     
-       <li class="iconfont icon-yubapaiqishan">
-          <div class="name">yubapaiqishan</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-yubapaiqishan"> </i>
+      <div class="fontclass">.icon-yubapaiqishan</div>
+    </li>
     
-       <li class="iconfont icon-linyujian">
-          <div class="name">linyujian</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-linyujian"> </i>
+      <div class="fontclass">.icon-linyujian</div>
+    </li>
     
-       <li class="iconfont icon-dengpao">
-          <div class="name">dengpao</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-dengpao"> </i>
+      <div class="fontclass">.icon-dengpao</div>
+    </li>
     
-       <li class="iconfont icon-teshuanzhuang">
-          <div class="name">teshuanzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-teshuanzhuang"> </i>
+      <div class="fontclass">.icon-teshuanzhuang</div>
+    </li>
     
-       <li class="iconfont icon-yimenanzhuang">
-          <div class="name">yimenanzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-yimenanzhuang"> </i>
+      <div class="fontclass">.icon-yimenanzhuang</div>
+    </li>
     
-       <li class="iconfont icon-haocaifei">
-          <div class="name">haocaifei</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-haocaifei"> </i>
+      <div class="fontclass">.icon-haocaifei</div>
+    </li>
     
-       <li class="iconfont icon-yiguileianzhuang">
-          <div class="name">yiguileianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-yiguileianzhuang"> </i>
+      <div class="fontclass">.icon-yiguileianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-wugongfei">
-          <div class="name">wugongfei</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-wugongfei"> </i>
+      <div class="fontclass">.icon-wugongfei</div>
+    </li>
     
-       <li class="iconfont icon-tijiaoxian">
-          <div class="name">tijiaoxian</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-tijiaoxian"> </i>
+      <div class="fontclass">.icon-tijiaoxian</div>
+    </li>
     
-       <li class="iconfont icon-yuanchengfei">
-          <div class="name">yuanchengfei</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-yuanchengfei"> </i>
+      <div class="fontclass">.icon-yuanchengfei</div>
+    </li>
     
-       <li class="iconfont icon-menleianzhuang">
-          <div class="name">menleianzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-menleianzhuang"> </i>
+      <div class="fontclass">.icon-menleianzhuang</div>
+    </li>
     
-       <li class="iconfont icon-shouye">
-          <div class="name">shouye</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-shouye"> </i>
+      <div class="fontclass">.icon-shouye</div>
+    </li>
     
-       <li class="iconfont icon-matonganzhuang">
-          <div class="name">matonganzhuang</div>
-       </li>
+    <li>
+      <i class="icon iconfont icon-matonganzhuang"> </i>
+      <div class="fontclass">.icon-matonganzhuang</div>
+    </li>
     
     </ul>
-   <div>
+   <div style="clear: both;">
      <h2>Use Icon Font</h2>
      <pre>
       &lt;span class=&quot;iconfont icon-add&quot;&gt;&lt;/span&gt;

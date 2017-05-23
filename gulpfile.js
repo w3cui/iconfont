@@ -11,7 +11,7 @@ var del = require("del");
 var fs = require("fs");
 
 // 发布项目
-var filt = ["dome1", "dome2", "dome3"],
+var filt = ["andaren", "dome2", "dome3"],
     task = {
         // 发布打包
         iconfont: function(name) {
@@ -27,8 +27,15 @@ var filt = ["dome1", "dome2", "dome3"],
                 }))
                 .pipe(iconfont({
                     fontName: fontName,
-                    formats: ['ttf', 'eot', 'woff','svg'],
-                    normalize: true
+                    formats: ['svg', 'ttf', 'eot', 'woff', 'woff2'],
+                    normalize: true,
+                    options: {
+                        fixedWidth: false,
+                        normalize: false,
+                        fontHeight: 512,
+                        descent: -32,
+                        normalize:true
+                      }
                 }))
                 .on('glyphs', function(glyphs, options) {
                     // CSS templating, e.g.           
@@ -503,8 +510,9 @@ util.getPym = function(text, full) {
     var reg = /[\w^_]/;
     for (var i = 0; i < text.length; i++) {
         var zi = text.charAt(i);
+
         if (reg.test(zi)) {
-            //pym.push(zi.toUpperCase());
+            pym.push(zi);
         } else {
             var py = util.findPym(zi, full);
             py ? pym.push(py) : null;
