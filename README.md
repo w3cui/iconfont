@@ -14,7 +14,7 @@ gulp-iconfont + gulp-iconfont-css + gulp-template
 ```
 git clone https://github.com/w3cui/iconfont.git  
 
-npm install
+npm install --save-dev   
 
 gulp 
 
