@@ -1,6 +1,6 @@
 var util = {};
 //是否包含字符串
-String.prototype.contains = function () {
+String.prototype.contains = function() {
     for (var i = 0; i < arguments.length; i++) {
         var s = arguments[i];
         if (this.indexOf(s) != -1) {
@@ -10,9 +10,10 @@ String.prototype.contains = function () {
     return false;
 };
 // 首字母大写
-String.prototype.upperCaseFirstChar = function () {
+String.prototype.upperCaseFirstChar = function() {
     if (this.length > 0)
-        return this.charAt(0).toUpperCase() + this.substring(1, this.length);
+    // return this.charAt(0).toUpperCase() + this.substring(0, this.length);
+        return this.substring(0, this.length);
     return this;
 };
 util.PinYin = {
@@ -418,13 +419,14 @@ util.PinYin = {
     "fou": "\u7f36",
     "bia": "\u9adf"
 };
-util.getPym = function (text, full) {
+util.getPym = function(text, full) {
     var pym = [];
     var reg = /[\w^_]/;
     for (var i = 0; i < text.length; i++) {
         var zi = text.charAt(i);
+
         if (reg.test(zi)) {
-            pym.push(zi.toUpperCase());
+            pym.push(zi);
         } else {
             var py = util.findPym(zi, full);
             py ? pym.push(py) : null;
@@ -433,7 +435,7 @@ util.getPym = function (text, full) {
     return pym.join("");
 };
 //获取拼音码
-util.findPym = function (zi, full) {
+util.findPym = function(zi, full) {
     for (var name in util.PinYin) {
         if (util.PinYin[name].contains(zi)) {
             var pym = name.upperCaseFirstChar();
@@ -444,6 +446,8 @@ util.findPym = function (zi, full) {
 };
 
 //判断是否是拼音码
-util.isPym = function (text) {
+util.isPym = function(text) {
     return /^\w+$/g.test(text);
 };
+
+module.exports = util;
