@@ -25,4 +25,4 @@ gulp
 
 >  或者您可以 "follow" 一下，我会不断开源更多的有趣的项目
 
->  开发环境  Chrome 56  nodejs 6.10.0
+>  开发环境  Chrome 56  nodejs 11.14.0
