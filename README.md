@@ -13,9 +13,9 @@ gulp-iconfont + gulp-iconfont-css + gulp-template
 
 ```
 git clone https://github.com/w3cui/iconfont.git  
-
-npm install --save-dev   
-
+npm install
+> 注意:首次配置项目需要执行一下下面的命令，不是忽略：    
+> $ npm install --global gulp 
 gulp 
 
 ```
